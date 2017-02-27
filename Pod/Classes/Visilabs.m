@@ -737,7 +737,7 @@ static VisilabsReachability *reachability;
         [reachability startNotifier];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(networkReachabilityChanged:)
-                                                     name:kReachabilityChangedNotification
+                                                     name:kVisiReachabilityChangedNotification
                                                    object:nil];
     }
 }

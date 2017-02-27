@@ -143,7 +143,7 @@
 {
     self.reachability = [VisilabsReachability reachabilityForInternetConnection];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStatusChanged:) name:kReachabilityChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStatusChanged:) name:kVisiReachabilityChangedNotification object:nil];
     [self.reachability startNotifier];
     [self updateRecoverTime]; //notifier not trigger when start, update to correct value in initalize.
 }
