@@ -924,7 +924,7 @@ NSString *SentInstall_IBeacon = @"SentInstall_IBeacon";
 -(BOOL)checkInstallChangeForLaunch
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SH_LMBridge_UpdateiBeaconStatus" object:nil];
-
+    return YES;
 }
 
 #pragma mark - private functions
